@@ -43,7 +43,7 @@ const PlagiarismChecker = () => {
       }
 
       const data = await response.json();
-      if(checkerType === "minhash") {
+      if (checkerType === "minhash") {
         data.similarity = data.similarity.toFixed(0);
       } else {
         data.similarity = data.similarity.toFixed(3);
